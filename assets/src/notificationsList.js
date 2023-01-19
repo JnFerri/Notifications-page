@@ -1,9 +1,9 @@
-class NotificationList{
+export class NotificationList{
     constructor(){
     this._notificationList = []
     }
 
-    addToList(props){
+   static addToList(props){
         this.notificationList.push(props)
     }
 

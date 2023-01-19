@@ -1,4 +1,4 @@
-class Notification{
+export class Notification{
     constructor(image, name, message){
         this._image = image
         this._name = name

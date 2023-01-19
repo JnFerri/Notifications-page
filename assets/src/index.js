@@ -1,4 +1,11 @@
+import { Notification } from "./Notification.js";
+import { NotificationList } from "./notificationsList.js";
 
-const controller = new NotificationController()
+const notification = new Notification()
 
-controller.addNotification('jean','jean','jean')
+function addNotificationToList(userImage,userName,userMessage){
+    NotificationList.addToList(new Notification(userImage,userName,userMessage))
+    console.log()
+}
+
+addNotificationToList('jean','jean','jean')
